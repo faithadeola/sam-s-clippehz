@@ -29,9 +29,10 @@ export function TimePicker({ selectedDay, selectedTime, onSelect }: TimePickerPr
 
       <Show when={slots.length > 0}>
         <div className="flex gap-2 flex-wrap">
-          <Repeat each={slots} key={(s) => s}>
+          <Repeat each={slots}>
             {(slot) => (
               <button
+                key={slot}
                 type="button"
                 onClick={() => onSelect(slot)}
                 className={cn(

@@ -4,13 +4,11 @@ import { HeroCtas } from './parts/hero-ctas';
 import { OpenBadge } from './parts/open-badge';
 import { useInView } from '@shared/hooks/use-in-view';
 import { useCountUp } from '@shared/hooks/use-count-up';
-import { cn } from '@shared/utils/cn';
 
-function StatItem({ num, suffix = '', label, delayMs, active }: {
+function StatItem({ num, suffix = '', label, active }: {
   readonly num: number;
   readonly suffix?: string;
   readonly label: string;
-  readonly delayMs: number;
   readonly active: boolean;
 }) {
   const count = useCountUp(num, 1600, active);
@@ -163,10 +161,10 @@ export function HeroScreen() {
           ref={statsRef as React.RefObject<HTMLDivElement>}
           className="mt-16 pt-8 border-t border-hairline grid grid-cols-2 sm:grid-cols-4 gap-y-8 divide-x divide-hairline"
         >
-          <StatItem num={10}  suffix="+" label="Years running"  delayMs={0}   active={statsInView} />
-          <StatItem num={8}   suffix=""  label="Services"       delayMs={100} active={statsInView} />
-          <StatItem num={5}   suffix=""  label="Products sold"  delayMs={200} active={statsInView} />
-          <StatItem num={10}  suffix="pm" label="Open till"     delayMs={300} active={statsInView} />
+          <StatItem num={10}  suffix="+" label="Years running" active={statsInView} />
+          <StatItem num={8}   suffix=""  label="Services"      active={statsInView} />
+          <StatItem num={5}   suffix=""  label="Products sold" active={statsInView} />
+          <StatItem num={10}  suffix="pm" label="Open till"    active={statsInView} />
         </div>
 
       </div>

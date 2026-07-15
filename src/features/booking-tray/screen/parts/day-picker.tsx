@@ -26,9 +26,10 @@ export function DayPicker({ selected, onSelect }: DayPickerProps) {
     <div className="flex flex-col gap-2">
       <span className="font-mono text-[13px] text-steel uppercase tracking-wider">Day</span>
       <div className="flex gap-2 flex-wrap">
-        <Repeat each={days} key="label">
+        <Repeat each={days}>
           {(day) => (
             <button
+              key={day.label}
               type="button"
               onClick={() => onSelect(day.date)}
               className={cn(

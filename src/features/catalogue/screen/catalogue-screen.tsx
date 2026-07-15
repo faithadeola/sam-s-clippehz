@@ -36,7 +36,7 @@ export function CatalogueScreen() {
 
         {/* Card grid */}
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-4 gap-3">
-          <Repeat each={CONFIG.services} key="id">
+          <Repeat each={[...CONFIG.services]}>
             {(service, i) => (
               <div
                 key={service.id}

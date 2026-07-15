@@ -98,9 +98,9 @@ export function BookingTrayScreen() {
                 Selected
               </span>
               <div className="flex flex-wrap gap-2">
-                <Repeat each={selectedServices} key="id">
+                <Repeat each={[...selectedServices]}>
                   {(service) => (
-                    <ServiceChip service={service} onRemove={removeService} />
+                    <ServiceChip key={service.id} service={service} onRemove={removeService} />
                   )}
                 </Repeat>
               </div>

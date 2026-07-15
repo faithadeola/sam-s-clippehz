@@ -28,7 +28,7 @@ export function ProductsScreen() {
 
         {/* Product grid */}
         <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-5 gap-4">
-          <Repeat each={CONFIG.products} key="id">
+          <Repeat each={[...CONFIG.products]}>
             {(product, i) => (
               <ProductCard
                 key={product.id}
