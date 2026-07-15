@@ -54,7 +54,7 @@ export function HomeServiceToggle({
             className="w-full font-body text-[15px] text-ink bg-paper border border-hairline rounded-[6px] px-3 py-2.5 placeholder:text-steel focus:outline-none focus:border-volt transition-colors duration-100"
           />
           <p className="font-body text-[13px] text-steel">
-            Sam will confirm the home-service fee on WhatsApp.
+            Sam's Clipperhz will confirm the home-service fee on WhatsApp.
           </p>
         </div>
       </Show>

@@ -159,7 +159,7 @@ export function ReviewsScreen() {
             </div>
             <div className="flex flex-col gap-1">
               <span className="font-display font-bold text-[16px] text-ink">Had a great cut?</span>
-              <span className="font-body text-[14px] text-steel">Leave a review on Google — it means a lot to Sam.</span>
+              <span className="font-body text-[14px] text-steel">Leave a review on Google — it means a lot to Sam's Clipperhz.</span>
             </div>
             <a
               href={mapsUrl}

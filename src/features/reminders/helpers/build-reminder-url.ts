@@ -11,7 +11,7 @@ export function buildReminderUrl(params: ReminderParams): string {
   const { name, phone, lastCut, intervalWeeks } = params;
 
   const lines: string[] = [
-    `Hi Sam – add me to touch-up reminders.`,
+    `Hi Sam's Clipperhz – add me to touch-up reminders.`,
     `Name: ${name.trim()}`,
     `Number: ${phone.trim()}`,
     `Last cut: ${lastCut}`,

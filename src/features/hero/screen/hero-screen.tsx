@@ -27,12 +27,17 @@ function StatItem({ num, suffix = '', label, active, delayMs }: {
 
 export function HeroScreen() {
   const [mounted, setMounted] = useState(false);
+  const [statsActive, setStatsActive] = useState(false);
   const { ref: statsRef, inView: statsInView } = useInView();
 
   useEffect(() => {
     const t = setTimeout(() => setMounted(true), 60);
     return () => clearTimeout(t);
   }, []);
+
+  useEffect(() => {
+    if (statsInView) setStatsActive(true);
+  }, [statsInView]);
 
   function anim(delay: number): React.CSSProperties {
     return {
@@ -167,10 +172,10 @@ export function HeroScreen() {
           ref={statsRef as React.RefObject<HTMLDivElement>}
           className="mt-14 sm:mt-20 pt-8 border-t border-white/10 grid grid-cols-2 sm:grid-cols-4 gap-6 sm:gap-10"
         >
-          <StatItem num={10}  suffix="+" label="Years running" active={statsInView} delayMs={0}   />
-          <StatItem num={8}   suffix=""  label="Services"      active={statsInView} delayMs={100} />
-          <StatItem num={5}   suffix=""  label="Products"      active={statsInView} delayMs={200} />
-          <StatItem num={10}  suffix="pm" label="Open till"    active={statsInView} delayMs={300} />
+          <StatItem num={10}  suffix="+" label="Years running" active={statsActive} delayMs={0}   />
+          <StatItem num={8}   suffix=""  label="Services"      active={statsActive} delayMs={100} />
+          <StatItem num={5}   suffix=""  label="Products"      active={statsActive} delayMs={200} />
+          <StatItem num={10}  suffix="pm" label="Open till"    active={statsActive} delayMs={300} />
         </div>
 
       </div>

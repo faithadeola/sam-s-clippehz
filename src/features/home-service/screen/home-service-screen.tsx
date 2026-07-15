@@ -33,7 +33,7 @@ export function HomeServiceScreen() {
           </h2>
 
           <p className="font-body text-[17px] text-steel leading-relaxed max-w-sm">
-            Can't make it to Orisunbare Street? Sam brings the shop to your door.
+            Can't make it to Orisunbare Street? Sam's Clipperhz brings the shop to your door.
             {CONFIG.homeService.radiusNote !== '' && (
               <> {CONFIG.homeService.radiusNote}</>
             )}{' '}

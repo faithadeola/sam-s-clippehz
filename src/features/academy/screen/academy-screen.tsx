@@ -5,7 +5,7 @@ import { cn } from '@shared/utils/cn';
 
 export function AcademyScreen() {
   const { ref, inView } = useInView();
-  const waUrl = `https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent("Hi Sam, I'm interested in learning barbering. Please tell me more about the sessions.")}`;
+  const waUrl = `https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent("Hi Sam's Clipperhz, I'm interested in learning barbering. Please tell me more about the sessions.")}`;
 
   return (
     <section id="academy" className="py-24 px-4 sm:px-6 bg-bone border-t border-hairline">
@@ -31,7 +31,7 @@ export function AcademyScreen() {
             className="inline-flex items-center gap-2 bg-volt hover:bg-volt-ink text-white font-body font-semibold text-[17px] px-6 py-4 rounded-[8px] transition-all duration-200 hover:scale-[1.02] active:scale-[0.98] self-start"
           >
             <MessageCircle size={18} aria-hidden="true" />
-            Message Sam on WhatsApp
+            Message Sam's Clipperhz on WhatsApp
           </a>
         </div>
 

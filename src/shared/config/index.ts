@@ -114,7 +114,7 @@ export const CONFIG: Config = {
   ],
 
   products: [
-    { id: "clippers",   name: "Professional clippers", blurb: "The same tools Sam uses. Available to take home.", photo: "/images/products/clippers.jpg" },
+    { id: "clippers",   name: "Professional clippers", blurb: "The same tools used here. Available to take home.", photo: "/images/products/clippers.jpg" },
     { id: "pomade",     name: "Hair pomade",            blurb: "Hold and shine. Barber-grade.",                   photo: "/images/products/pomade.jpg" },
     { id: "beard-oil",  name: "Beard oil",              blurb: "Conditions, softens, and scents the beard.",      photo: "/images/products/beard-oil.jpg" },
     { id: "shampoo",    name: "Barber shampoo",         blurb: "Deep clean for scalp and hair.",                  photo: "/images/products/shampoo.jpg" },
@@ -144,6 +144,6 @@ export const CONFIG: Config = {
 
   academy: {
     enabled: true,
-    blurb: "Want to learn the craft? Sam offers one-on-one barbering sessions for beginners and intermediates in Ibadan.",
+    blurb: "Want to learn the craft? Sam's Clipperhz offers one-on-one barbering sessions for beginners and intermediates in Ibadan.",
   },
 };
