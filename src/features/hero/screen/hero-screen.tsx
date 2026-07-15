@@ -153,7 +153,7 @@ export function HeroScreen() {
             className="hidden sm:block font-body text-[16px] text-white/40 leading-relaxed max-w-md"
             style={anim(620)}
           >
-            Owner-operated on Orisunbare Street. Sam handles every cut himself — walk in or book ahead on WhatsApp.
+            Need a fresh cut or grooming service? Walk in or book ahead — every cut done right. Clippers and hair products available in-store too.
           </p>
 
           {/* CTAs */}
