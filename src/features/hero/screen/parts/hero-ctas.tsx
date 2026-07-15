@@ -18,7 +18,7 @@ export function HeroCtas() {
 
       <a
         href="#catalogue"
-        className="inline-flex items-center gap-2 text-ink hover:text-volt font-body font-semibold text-[17px] px-6 py-4 rounded-[6px] border border-hairline hover:border-volt transition-colors duration-150"
+        className="inline-flex items-center gap-2 text-white/70 hover:text-white font-body font-semibold text-[17px] px-6 py-4 rounded-[6px] border border-white/20 hover:border-white/50 transition-colors duration-150"
       >
         See the cuts
         <ArrowRight size={16} aria-hidden="true" />
