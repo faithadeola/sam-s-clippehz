@@ -111,7 +111,7 @@ export function HeroScreen() {
                 transitionDelay: '560ms',
               }}
             >
-              Beauty Salon on Orisunbare Street, Ibadan.
+              Owner-operated barbershop on Orisunbare Street, Ibadan.
               Walk in or book ahead on WhatsApp — every cut done right.
               Clippers and hair products available in-store too.
             </p>
@@ -141,6 +141,7 @@ export function HeroScreen() {
               {[
                 { label: 'Location', value: 'Orisunbare St, Ibadan' },
                 { label: 'Hours', value: 'Mon–Sat 8 am – 10 pm · Sun 1–10 pm' },
+                { label: 'Booking', value: 'WhatsApp only' },
                 { label: 'Also sells', value: 'Clippers · Hair products' },
               ].map(({ label, value }) => (
                 <div key={label} className="px-5 py-4 flex flex-col gap-0.5 hover:bg-volt-soft transition-colors duration-150">
