@@ -12,14 +12,14 @@
 @tailwind utilities;
 
 :root {
-  --bone:     #F5F7F4;
-  --paper:    #FFFFFF;
-  --ink:      #131A14;
-  --steel:    #7A8C7D;
-  --hairline: #DDE3DC;
-  --volt:     #1F4D2E;
-  --volt-ink: #163620;
-  --volt-soft: #EBF2EC;
+  --bone:      #F7F3F2;
+  --paper:     #FFFFFF;
+  --ink:       #1A0F0F;
+  --steel:     #8C7A7A;
+  --hairline:  #E8DADA;
+  --volt:      #7C2D3E;
+  --volt-ink:  #5C1E2C;
+  --volt-soft: #F7EEF0;
 }
 
 @keyframes fade-up {
