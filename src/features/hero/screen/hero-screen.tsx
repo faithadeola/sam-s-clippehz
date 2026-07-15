@@ -112,8 +112,8 @@ export function HeroScreen() {
 
           {/* Eyebrow */}
           <div style={anim(80)} className="flex items-center gap-3">
-            <div className="w-8 h-[2px] bg-volt shrink-0" />
-            <span className="font-mono text-[11px] text-volt uppercase tracking-[0.22em]">
+            <div className="w-10 h-[2px] bg-volt shrink-0" />
+            <span className="font-mono text-[13px] text-white font-bold uppercase tracking-[0.22em] drop-shadow-[0_1px_3px_rgba(0,0,0,0.8)]">
               Sam's Clipperhz · Since 2015 · Ibadan
             </span>
           </div>
