@@ -102,7 +102,6 @@ function ReviewCard({ review, index, inView }: {
 
 export function ReviewsScreen() {
   const { ref, inView } = useInView();
-  const waUrl = `https://wa.me/${CONFIG.contact.whatsapp}?text=${encodeURIComponent("Hi Sam, I'd like to leave a review for Sam's Clipperhz!")}`;
   const mapsUrl = CONFIG.contact.mapsUrl;
 
   return (
