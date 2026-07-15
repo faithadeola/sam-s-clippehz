@@ -24,12 +24,11 @@
     "strict": true,
     "noImplicitAny": true,
     "strictNullChecks": true,
-    "baseUrl": ".",
     "paths": {
-      "@features/*": ["src/features/*"],
-      "@shared/*":   ["src/shared/*"],
-      "@ui/*":       ["src/ui/*"],
-      "@icons":      ["src/ui/icons/index.ts"]
+      "@features/*": ["./src/features/*"],
+      "@shared/*":   ["./src/shared/*"],
+      "@ui/*":       ["./src/ui/*"],
+      "@icons":      ["./src/ui/icons/index.ts"]
     }
   },
   "include": ["src"]
